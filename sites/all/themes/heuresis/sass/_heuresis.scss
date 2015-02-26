@@ -1,0 +1,154 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 25, 2015, 7:41:12 PM
+    Author     : SYP
+*/
+
+#page {
+    max-width: 100%;
+    .block-menu-block {
+        ul {
+            margin: 0; padding: 0;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+#header, #footer {
+    .inner { 
+        max-width: 1200px; margin-left: auto; margin-right: auto; 
+        position: relative;
+    }
+}
+
+
+
+#header {
+    height: 100px; padding: 20px 0;
+    background: #eaeaea; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWFlYWVhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRiNGE0YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(-45deg,  #eaeaea 0%, #4b4a4a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#eaeaea), color-stop(100%,#4b4a4a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #eaeaea 0%,#4b4a4a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #eaeaea 0%,#4b4a4a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #eaeaea 0%,#4b4a4a 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #eaeaea 0%,#4b4a4a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#4b4a4a',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+    #logo {
+        img { width: 208px; }
+    }
+    .region-header {
+        clear:none;
+    }
+    .main-menu {
+        margin: 0;
+        .block-title {
+            font-size:.9em; text-transform: uppercase; color: #fff;
+            cursor: pointer; float: right;
+            &:after {
+                content: "\f0c9";
+                font-family: 'FontAwesome';
+                font-size: 3.5rem;
+                display: inline-block;
+                line-height: 3rem;
+                color: #bdd3fd;
+                vertical-align: middle;
+                margin-left: 20px;
+            }
+        }
+        .menu-block-wrapper {
+            display: none;
+            position: absolute; width: 100%; left: 0;
+            background-color: #fff; border-bottom: 1px $lightgray solid;
+            top:100px; margin: 0; padding: 0 0 20px 0; z-index: 2;
+            ul {
+                margin: 0; padding: 0;
+            }
+            li {
+                float: left; list-style: none; padding: 0;
+                font-weight: bold;
+                margin: 0 0 20px 0; width: 25%;
+                a {
+                    color: $blue; text-decoration: none;
+                }
+                .menu {
+                    li {
+                        float:none; font-weight: normal; width: auto;
+                        margin: 0;
+                    }
+                }
+                &.home {
+                    width:25%;
+                }
+                &.markets {
+                    clear: left; margin-left: 25%;
+                }
+            }
+        }
+        &.menu-active {
+            .menu-block-wrapper {
+                display: block;
+            }
+        }
+    }
+}
+#main {
+    max-width: 1200px; margin: 0 auto;
+    .region-sidebar-first {
+        padding: 0;
+        .block-menu-block {
+            font-size: 1.3em; 
+            li {
+                margin-bottom: 5px;
+                a { color: $lightblue; }
+            }
+        }
+    }
+    #content {
+        padding: 0;
+    }
+    h1.title {
+        font-size: 2.5em; text-transform: uppercase;
+        font-weight: normal; letter-spacing: 3px;
+    }
+    h2 {
+        font-family: $opensans-condensed; font-weight: 600;
+        color: $blue; font-size: 2em; margin: 1em 0; line-height: normal;
+    }
+}
+#footer {
+    background-color: $gray;
+    color: #fff;
+    p {
+        margin: 0;
+    }
+    .join-mailing-list {
+        padding: 20px 0;
+        border-bottom: 1px $lightgray solid;
+    }
+    .footer-info-block, .footer-menu-block, .copyright-footer {
+        float: left;
+        a {
+            color: #fff;
+        }
+    }
+    .footer-info-block {
+        width: 40%;
+    }
+    .footer-menu-block {
+        width: 35%;
+    }
+    .copyright-footer {
+        width: 25%;
+    }
+}
