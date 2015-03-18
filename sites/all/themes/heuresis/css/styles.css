@@ -2032,6 +2032,7 @@ and open the template in the editor.
 #main h2 {
   color: #355397;
   margin-bottom: 0;
+  line-height: normal;
 }
 /* line 171, ../sass/_heuresis.scss */
 #main h3 {
