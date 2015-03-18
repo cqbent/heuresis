@@ -28,6 +28,17 @@ Drupal.behaviors.my_custom_behavior = {
             $('.region-header .main-menu').addClass('menu-active');
         }
     });
+    
+    // product hotspot functions 
+    $('.product-image .hotspot').hover(function() {
+        console.log('tis');
+        if ($(this).hasClass('left')) {
+            $('.product-container .ttip.left').addClass('active');
+        }
+        else {
+            $('.product-container .ttip.right').addClass('active');
+        }
+    })
 
   }
 };
