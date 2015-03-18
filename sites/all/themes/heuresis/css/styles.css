@@ -1977,6 +1977,7 @@ and open the template in the editor.
 /* line 133, ../sass/_heuresis.scss */
 #main .region-sidebar-first {
   padding: 0 20px 0 0;
+  margin-top: 80px;
 }
 /* line 135, ../sass/_heuresis.scss */
 #main .region-sidebar-first .block-menu-block {
@@ -2012,6 +2013,8 @@ and open the template in the editor.
   font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
   font-weight: 600;
   color: #355397;
+  line-height: 1em;
+  margin-bottom: 40px;
   /*
   font-size: 2.5em; text-transform: uppercase;
   font-weight: normal; letter-spacing: 3px;
