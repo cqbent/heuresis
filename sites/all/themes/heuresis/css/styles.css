@@ -1972,6 +1972,7 @@ and open the template in the editor.
   margin: 0 auto;
   padding: 3em 20px 20px 20px;
   /* specifications list format */
+  /* product comparison layout */
 }
 /* line 133, ../sass/_heuresis.scss */
 #main .region-sidebar-first {
@@ -1980,7 +1981,7 @@ and open the template in the editor.
 }
 /* line 135, ../sass/_heuresis.scss */
 #main .region-sidebar-first .block-menu-block {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 /* line 137, ../sass/_heuresis.scss */
 #main .region-sidebar-first .block-menu-block h2.block-title {
@@ -1992,7 +1993,7 @@ and open the template in the editor.
 }
 /* line 141, ../sass/_heuresis.scss */
 #main .region-sidebar-first .block-menu-block li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 /* line 143, ../sass/_heuresis.scss */
 #main .region-sidebar-first .block-menu-block li a {
@@ -2066,6 +2067,17 @@ and open the template in the editor.
 #main .group-left, #main .group-right {
   width: 100%;
 }
+/* line 195, ../sass/_heuresis.scss */
+#main .product-comparison {
+  position: relative;
+}
+/* line 198, ../sass/_heuresis.scss */
+#main .product-comparison .specs {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+}
 @media (min-width: 1160px) {
   /* line 130, ../sass/_heuresis.scss */
   #main {
@@ -2074,7 +2086,7 @@ and open the template in the editor.
   }
 }
 @media (min-width: 780px) {
-  /* line 199, ../sass/_heuresis.scss */
+  /* line 209, ../sass/_heuresis.scss */
   #main .specifications-list li {
     width: 100%;
   }
@@ -2084,28 +2096,28 @@ and open the template in the editor.
     display: block;
     clear: both;
   }
-  /* line 202, ../sass/_heuresis.scss */
+  /* line 212, ../sass/_heuresis.scss */
   #main .specifications-list li .label {
     float: left;
     width: 30%;
     font-weight: normal;
   }
-  /* line 206, ../sass/_heuresis.scss */
+  /* line 216, ../sass/_heuresis.scss */
   #main .specifications-list li .description {
     float: left;
     width: 70%;
   }
-  /* line 211, ../sass/_heuresis.scss */
+  /* line 221, ../sass/_heuresis.scss */
   #main .img-left {
     float: left;
     margin-right: 20px;
   }
-  /* line 214, ../sass/_heuresis.scss */
+  /* line 224, ../sass/_heuresis.scss */
   #main .img-right {
     float: right;
     margin-left: 20px;
   }
-  /* line 217, ../sass/_heuresis.scss */
+  /* line 227, ../sass/_heuresis.scss */
   #main .responsive-grid {
     list-style: none;
     padding: 0;
@@ -2174,43 +2186,43 @@ and open the template in the editor.
     margin-left: 66.66667%;
     margin-right: -100%;
   }
-  /* line 225, ../sass/_heuresis.scss */
+  /* line 235, ../sass/_heuresis.scss */
   #main .responsive-grid li {
     box-sizing: border-box;
     padding: 0 10px;
   }
-  /* line 227, ../sass/_heuresis.scss */
+  /* line 237, ../sass/_heuresis.scss */
   #main .responsive-grid li:first-child {
     padding-left: 0;
   }
-  /* line 228, ../sass/_heuresis.scss */
+  /* line 238, ../sass/_heuresis.scss */
   #main .responsive-grid li:last-child {
     padding-right: 0;
   }
-  /* line 233, ../sass/_heuresis.scss */
+  /* line 243, ../sass/_heuresis.scss */
   #main .view-news-list .views-row .group-left {
     width: 20%;
   }
-  /* line 236, ../sass/_heuresis.scss */
+  /* line 246, ../sass/_heuresis.scss */
   #main .view-news-list .views-row .group-right {
     width: 80%;
   }
 }
 
-/* line 243, ../sass/_heuresis.scss */
+/* line 253, ../sass/_heuresis.scss */
 #navigation {
   height: auto;
   margin: 0;
   padding: 0;
   position: relative;
 }
-/* line 245, ../sass/_heuresis.scss */
+/* line 255, ../sass/_heuresis.scss */
 #navigation .inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 249, ../sass/_heuresis.scss */
+/* line 259, ../sass/_heuresis.scss */
 .button {
   background-color: #355397;
   border: none;
@@ -2218,56 +2230,56 @@ and open the template in the editor.
   padding: 2px 20px;
 }
 
-/* line 256, ../sass/_heuresis.scss */
+/* line 266, ../sass/_heuresis.scss */
 #footer {
   background-color: #414141;
   color: #fff;
 }
-/* line 259, ../sass/_heuresis.scss */
+/* line 269, ../sass/_heuresis.scss */
 #footer p {
   margin: 0;
 }
-/* line 262, ../sass/_heuresis.scss */
+/* line 272, ../sass/_heuresis.scss */
 #footer .join-mailing-list {
   padding: 20px 0;
   border-bottom: 1px #aeaeae solid;
 }
-/* line 266, ../sass/_heuresis.scss */
+/* line 276, ../sass/_heuresis.scss */
 #footer .join-mailing-list .entityform label {
   float: left;
   font-weight: normal;
   margin-right: 20px;
 }
-/* line 267, ../sass/_heuresis.scss */
+/* line 277, ../sass/_heuresis.scss */
 #footer .join-mailing-list .entityform .button {
   margin-left: 20px;
 }
-/* line 270, ../sass/_heuresis.scss */
+/* line 280, ../sass/_heuresis.scss */
 #footer .footer-info-block, #footer .footer-menu-block, #footer .copyright-footer {
   float: left;
 }
-/* line 272, ../sass/_heuresis.scss */
+/* line 282, ../sass/_heuresis.scss */
 #footer .footer-info-block a, #footer .footer-menu-block a, #footer .copyright-footer a {
   color: #fff;
 }
-/* line 276, ../sass/_heuresis.scss */
+/* line 286, ../sass/_heuresis.scss */
 #footer .footer-info-block {
   width: 40%;
 }
-/* line 279, ../sass/_heuresis.scss */
+/* line 289, ../sass/_heuresis.scss */
 #footer .footer-menu-block {
   width: 35%;
 }
-/* line 282, ../sass/_heuresis.scss */
+/* line 292, ../sass/_heuresis.scss */
 #footer .copyright-footer {
   width: 25%;
 }
 
-/* line 290, ../sass/_heuresis.scss */
+/* line 300, ../sass/_heuresis.scss */
 .front h1.title {
   display: none;
 }
-/* line 293, ../sass/_heuresis.scss */
+/* line 303, ../sass/_heuresis.scss */
 .front .home-banner {
   background: #15becf;
   /* Old browsers */
@@ -2296,54 +2308,71 @@ and open the template in the editor.
   display: block;
   clear: both;
 }
-/* line 307, ../sass/_heuresis.scss */
+/* line 317, ../sass/_heuresis.scss */
 .front .home-banner h2 {
-  font-size: 2.5em;
-  margin: 50px 0 0 0;
+  font-size: 2em;
+  margin: 50px 0 5px 0;
   font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
-/* line 311, ../sass/_heuresis.scss */
+/* line 321, ../sass/_heuresis.scss */
 .front .home-banner h3 {
   font-weight: 300;
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0 0 15px 0;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1em;
 }
-/* line 315, ../sass/_heuresis.scss */
+/* line 325, ../sass/_heuresis.scss */
 .front .home-banner p {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
-/* line 318, ../sass/_heuresis.scss */
+/* line 328, ../sass/_heuresis.scss */
 .front .home-banner a {
   color: #fff;
 }
-/* line 322, ../sass/_heuresis.scss */
-.front .home-banner .col-1 {
-  float: left;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: -25%;
+@media (max-width: 779px) {
+  /* line 303, ../sass/_heuresis.scss */
+  .front .home-banner {
+    padding: 20px;
+  }
+  /* line 333, ../sass/_heuresis.scss */
+  .front .home-banner h2 {
+    margin-top: 0;
+  }
+  /* line 334, ../sass/_heuresis.scss */
+  .front .home-banner .col-1 {
+    display: none;
+  }
 }
-/* line 325, ../sass/_heuresis.scss */
-.front .home-banner .col-2 {
-  float: left;
-  width: 75%;
-  margin-left: 25%;
-  margin-right: -100%;
+@media (min-width: 780px) {
+  /* line 338, ../sass/_heuresis.scss */
+  .front .home-banner .col-1 {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+  /* line 342, ../sass/_heuresis.scss */
+  .front .home-banner .col-2 {
+    float: left;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: -100%;
+  }
 }
 
 /* image hotspot styling */
-/* line 335, ../sass/_heuresis.scss */
+/* line 354, ../sass/_heuresis.scss */
 #tiptip_holder {
   font-size: 1em;
   color: #fff;
   line-height: normal;
 }
-/* line 338, ../sass/_heuresis.scss */
+/* line 357, ../sass/_heuresis.scss */
 #tiptip_holder #tiptip_content {
   background-color: #1c7fc3;
   font-size: 1em;
@@ -2354,28 +2383,28 @@ and open the template in the editor.
   text-shadow: none;
   box-shadow: none;
 }
-/* line 343, ../sass/_heuresis.scss */
+/* line 362, ../sass/_heuresis.scss */
 #tiptip_holder #tiptip_content .img-hotspot-title {
   font-weight: bold;
   line-height: normal;
 }
-/* line 346, ../sass/_heuresis.scss */
+/* line 365, ../sass/_heuresis.scss */
 #tiptip_holder #tiptip_content .img-hotspot-description {
   font-size: 1em;
   line-height: normal;
 }
 
-/* line 352, ../sass/_heuresis.scss */
+/* line 371, ../sass/_heuresis.scss */
 .product-container {
   position: relative;
 }
-/* line 354, ../sass/_heuresis.scss */
+/* line 373, ../sass/_heuresis.scss */
 .product-container .product-image {
   width: 500px;
   margin: 0 auto;
   position: relative;
 }
-/* line 357, ../sass/_heuresis.scss */
+/* line 376, ../sass/_heuresis.scss */
 .product-container .product-image .hotspot {
   position: absolute;
   top: 50%;
@@ -2386,16 +2415,16 @@ and open the template in the editor.
   border-radius: 30px;
   cursor: pointer;
 }
-/* line 361, ../sass/_heuresis.scss */
+/* line 380, ../sass/_heuresis.scss */
 .product-container .product-image .hotspot.left {
   left: 15%;
 }
-/* line 364, ../sass/_heuresis.scss */
+/* line 383, ../sass/_heuresis.scss */
 .product-container .product-image .hotspot.right {
   top: 10%;
   left: 80%;
 }
-/* line 370, ../sass/_heuresis.scss */
+/* line 389, ../sass/_heuresis.scss */
 .product-container .ttip {
   width: 170px;
   height: 533px;
@@ -2407,63 +2436,63 @@ and open the template in the editor.
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 374, ../sass/_heuresis.scss */
+/* line 393, ../sass/_heuresis.scss */
 .product-container .ttip p {
   margin: 0;
 }
-/* line 375, ../sass/_heuresis.scss */
+/* line 394, ../sass/_heuresis.scss */
 .product-container .ttip .content {
   display: none;
   position: absolute;
   font-size: .875em;
 }
-/* line 378, ../sass/_heuresis.scss */
+/* line 397, ../sass/_heuresis.scss */
 .product-container .ttip .content:after {
   color: #1c7fc3;
   position: absolute;
   font-size: 50px;
   top: 40%;
 }
-/* line 384, ../sass/_heuresis.scss */
+/* line 403, ../sass/_heuresis.scss */
 .product-container .ttip .title {
   font-weight: bold;
 }
-/* line 391, ../sass/_heuresis.scss */
+/* line 410, ../sass/_heuresis.scss */
 .product-container .ttip.left .content {
   bottom: 20%;
 }
-/* line 393, ../sass/_heuresis.scss */
+/* line 412, ../sass/_heuresis.scss */
 .product-container .ttip.left .content:after {
   content: "\25B6";
   left: calc(100% - 8px);
 }
-/* line 400, ../sass/_heuresis.scss */
+/* line 419, ../sass/_heuresis.scss */
 .product-container .ttip.right {
   left: auto;
   right: 0;
 }
-/* line 402, ../sass/_heuresis.scss */
+/* line 421, ../sass/_heuresis.scss */
 .product-container .ttip.right .content {
   top: 20px;
 }
-/* line 404, ../sass/_heuresis.scss */
+/* line 423, ../sass/_heuresis.scss */
 .product-container .ttip.right .content:after {
   content: "\25C0";
   left: -45px;
   top: 30%;
 }
-/* line 412, ../sass/_heuresis.scss */
+/* line 431, ../sass/_heuresis.scss */
 .product-container .ttip.active .content {
   display: block;
 }
 
-/* line 421, ../sass/_heuresis.scss */
+/* line 440, ../sass/_heuresis.scss */
 .image-hotspot-wrapper {
   position: relative;
   clear: both;
 }
 
-/* line 425, ../sass/_heuresis.scss */
+/* line 444, ../sass/_heuresis.scss */
 .img-hotspot {
   width: 100%;
   height: 100%;
@@ -2471,30 +2500,30 @@ and open the template in the editor.
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
 }
 
-/* line 431, ../sass/_heuresis.scss */
+/* line 450, ../sass/_heuresis.scss */
 .img-hotspot-title {
   font-size: 1em;
   line-height: normal;
 }
 
-/* line 435, ../sass/_heuresis.scss */
+/* line 454, ../sass/_heuresis.scss */
 .img-hotspot-description {
   font-size: 10px;
   line-height: 10px;
   margin-top: 5px;
 }
 
-/* line 440, ../sass/_heuresis.scss */
+/* line 459, ../sass/_heuresis.scss */
 .hotspot-title {
   cursor: pointer;
 }
 
-/* line 443, ../sass/_heuresis.scss */
+/* line 462, ../sass/_heuresis.scss */
 .hotspot-title:hover {
   text-decoration: underline;
 }
 
-/* line 446, ../sass/_heuresis.scss */
+/* line 465, ../sass/_heuresis.scss */
 .hotspot-overlay {
   background: #ff000;
   opacity: 0.5;
@@ -2506,7 +2535,7 @@ and open the template in the editor.
   z-index: 11;
 }
 
-/* line 456, ../sass/_heuresis.scss */
+/* line 475, ../sass/_heuresis.scss */
 .img-hotspot-highlight {
   position: absolute;
   top: 0;
@@ -2518,63 +2547,63 @@ and open the template in the editor.
   background-repeat: no-repeat;
 }
 
-/* line 466, ../sass/_heuresis.scss */
+/* line 485, ../sass/_heuresis.scss */
 .form-managed-file div.image-widget-data {
   float: none;
 }
 
-/* line 469, ../sass/_heuresis.scss */
+/* line 488, ../sass/_heuresis.scss */
 .img-hotspot-box {
   position: absolute;
   z-index: 11;
 }
 
-/* line 473, ../sass/_heuresis.scss */
+/* line 492, ../sass/_heuresis.scss */
 .img-hotspot-1 {
   background-color: #6666FF;
 }
 
-/* line 476, ../sass/_heuresis.scss */
+/* line 495, ../sass/_heuresis.scss */
 .img-hotspot-2 {
   background-color: #66CCCC;
 }
 
-/* line 479, ../sass/_heuresis.scss */
+/* line 498, ../sass/_heuresis.scss */
 .img-hotspot-3 {
   background-color: #FF3366;
 }
 
-/* line 482, ../sass/_heuresis.scss */
+/* line 501, ../sass/_heuresis.scss */
 .img-hotspot-4 {
   background-color: #FF3300;
 }
 
-/* line 485, ../sass/_heuresis.scss */
+/* line 504, ../sass/_heuresis.scss */
 .img-hotspot-5 {
   background-color: #FFFF66;
 }
 
-/* line 488, ../sass/_heuresis.scss */
+/* line 507, ../sass/_heuresis.scss */
 .img-hotspot-6 {
   background-color: #33FF66;
 }
 
-/* line 491, ../sass/_heuresis.scss */
+/* line 510, ../sass/_heuresis.scss */
 .img-hotspot-7 {
   background-color: #99FF66;
 }
 
-/* line 494, ../sass/_heuresis.scss */
+/* line 513, ../sass/_heuresis.scss */
 .img-hotspot-8 {
   background-color: #FFCC99;
 }
 
-/* line 497, ../sass/_heuresis.scss */
+/* line 516, ../sass/_heuresis.scss */
 .img-hotspot-9 {
   background-color: #9966FF;
 }
 
-/* line 500, ../sass/_heuresis.scss */
+/* line 519, ../sass/_heuresis.scss */
 .img-hotspot-10 {
   background-color: #33CCFF;
 }
