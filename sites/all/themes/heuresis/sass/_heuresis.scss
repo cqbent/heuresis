@@ -192,6 +192,11 @@ and open the template in the editor.
     .group-left, .group-right {
         width: 100%;
     }
+    
+    .responsive-grid {
+        list-style: none; padding: 0; margin: 0;
+    }
+    
     /* product comparison layout */
     .product-comparison {
         position: relative;
@@ -201,6 +206,7 @@ and open the template in the editor.
             
         }
     }
+    
     
     @include breakpoint(minlarge) {
         padding-left: 0; padding-right: 0;
@@ -226,7 +232,6 @@ and open the template in the editor.
             float: right; margin-left: 20px;
         }
         .responsive-grid {
-            list-style: none; padding: 0; margin: 0;
             &.cols2 {
                 @include responsive-grid(2);
             }
@@ -257,11 +262,11 @@ and open the template in the editor.
         max-width: 1200px; margin: 0 auto;
     }
 }
-.button {
+.button, button, input[type=submit] {
     background-color: $blue;
     border: none;
     color: #FFF;
-    padding: 2px 20px;
+    padding: 5px 20px;
 }
 
 #footer {
@@ -302,16 +307,18 @@ and open the template in the editor.
         display: none;
     }
     .home-banner {
-        background: #15becf; /* Old browsers */
-        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        /*
+        background: #15becf; 
         background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTViZWNmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIwNTZiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-        background: -moz-linear-gradient(-45deg,  #15becf 0%, #2056bb 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#15becf), color-stop(100%,#2056bb)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(-45deg,  #15becf 0%,#2056bb 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(-45deg,  #15becf 0%,#2056bb 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(-45deg,  #15becf 0%,#2056bb 100%); /* IE10+ */
-        background: linear-gradient(135deg,  #15becf 0%,#2056bb 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15becf', endColorstr='#2056bb',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+        background: -moz-linear-gradient(-45deg,  #15becf 0%, #2056bb 100%); 
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#15becf), color-stop(100%,#2056bb)); 
+        background: -webkit-linear-gradient(-45deg,  #15becf 0%,#2056bb 100%); 
+        background: -o-linear-gradient(-45deg,  #15becf 0%,#2056bb 100%); 
+        background: -ms-linear-gradient(-45deg,  #15becf 0%,#2056bb 100%); 
+        background: linear-gradient(135deg,  #15becf 0%,#2056bb 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15becf', endColorstr='#2056bb',GradientType=1 ); 
+        */
+        background-image: url(../images/home_banner_image.jpg); background-repeat: none;
         color: #fff;
         line-height: normal;
         @include clearafter;
@@ -338,17 +345,174 @@ and open the template in the editor.
             $zen-column-count: 5;
             .col-1 {
                 display: block;
-                @include zen-grid-item(1,1);
+                @include zen-grid-item(2,1);
             }
             .col-2 {
-                @include zen-grid-item(4,2);
+                @include zen-grid-item(3,3);
+            }
+        }
+    }
+    #main {
+        max-width: 100%; margin: 0; padding: 0;
+        color: #fff;
+        .node {
+            background-color: #4891cd; padding: 40px 20px;
+            .field-name-body {
+                max-width: 1160px; margin: 0 auto;
+            }
+        }
+        .block {
+            max-width: 1160px; margin: 0 auto; padding: 40px 20px;
+        }
+        @include breakpoint(minsmall) {
+            .node, .block { padding: 40px 0; }
+            .node .responsive-grid {
+                .column-1 { padding-right: 40px; }
+                .column-2 { padding-left: 40px; }
+            }
+        }
+    }
+}
+/* product comparison page */
+.section-product-comparison {
+    #content {
+        $zen-column-count: 10;
+        .comparison-buttons {
+            li {
+                padding: 0 1px 0 0;
+                button {
+                    width: 100%; display: block;
+                    background-color: $gray; color: #fff;
+                    font-weight: bold;
+                    &.active {
+                        background-color: $lightblue;
+                    }
+                }
+            }
+        }
+        .comparison-images {
+            @include zen-grid-item(3,1);
+            position: relative;
+            img {
+                position: absolute; top: 0; 
+                &.pb200i {
+                    top: 30px; left: 70px; z-index: 2;
+                }
+                &:not(.pb200i) { display: none; }
+                &.active {
+                    display: block;
+                }
+            }
+        }
+        .comparison-table {
+            @include zen-grid-item(7,4);
+            tr {
+                border-bottom: 1px $gray solid;
+                th {
+                    text-align: left; color: $blue;
+                    vertical-align: top;
+                }
+                td, th {
+                    padding: 5px 10px;
+                    p {
+                        margin: 0;
+                    }
+                    .label {
+                        font-weight: bold;
+                    }
+                }
+                td:not(:first-child), th:not(:first-child) {
+                    border-left: 1px $gray solid;
+                }
+                td:not(:first-child), th:not(:first-child) {
+                    display: none;
+                }
+                td.active, th.active {
+                    display: table-cell; background: none;
+                }
+            }
+            tbody tr:last-child { border: none; }
+        }
+    }
+}
+
+/* product features styles */
+.feature-buttons {
+    border: 1px $lightgray solid; border-bottom: none;
+    button {
+        display: block; float: left;
+        width: 33.3%; padding: 7px 10px;
+        background-color: $gray; color: #fff;
+        font-weight: bold; border: none;
+        &.active {
+            background-color: $lightblue;
+        }
+        &:last-child { width: 33.4%; }
+    }
+    @include clearafter;
+}
+.product-features {
+    border: 1px $lightgray solid; 
+    border-top: none;
+    @include clearafter;
+    //$zen-column-count: 5;
+    
+    .feature-image {
+        //@include zen-grid-item(3,1);
+        display: table-cell; width: 60%; vertical-align: top;
+    }
+    .feature-description {
+        //@include zen-grid-item(2,4);
+        display: table-cell; width: 40%; vertical-align: top;
+        background-color: $gray; padding: 20px;
+        color: #fff; 
+        box-sizing: border-box;
+        p {
+            margin-top: 0;
+            span { color: $orange; padding-right:5px; }
+        }
+        div {
+            display: none;
+            &.active  {
+                display: block;
             }
         }
         
-        
-        
     }
 }
+
+/* contact page */
+.page-contact {
+    #content {
+        .contact-address {
+            span { display: inline-block; min-width: 80px; }
+        }
+        .contact-form {
+            .form-item {
+                margin-top: 0;
+            }
+            input[type=text] {
+                    background-color: #EAEAEA;
+                    border: none;
+                    color: #5B5B5B;
+                    text-transform: none;
+                    padding: 5px 10px;
+                }
+        }
+        @include breakpoint(minsmall) {
+            $zen-column-count: 4;
+            .contact-address {
+                @include zen-grid-item(1,1);
+            }
+            .contact-form {
+                @include zen-grid-item(3,2);
+            }
+        }
+    }
+    
+}
+
+
 
 /* image hotspot styling */
 
