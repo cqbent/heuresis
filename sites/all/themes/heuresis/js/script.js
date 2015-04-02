@@ -64,9 +64,11 @@ Drupal.behaviors.my_custom_behavior = {
     $('.feature-buttons button').click(function() {
         $('.feature-buttons button').removeClass('active');
         $('.feature-description div').removeClass('active');
+        $('.feature-image img').removeClass('active');
         var f_id = $(this).attr('id');
         $(this).addClass('active');
         $('.feature-description .'+f_id).addClass('active');
+        $('.feature-image img.'+f_id).addClass('active');
     })
 
   }

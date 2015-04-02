@@ -460,6 +460,13 @@ and open the template in the editor.
     .feature-image {
         //@include zen-grid-item(3,1);
         display: table-cell; width: 60%; vertical-align: top;
+        img {
+            display: none;
+            width: 100%; height: 100%;
+            &.active {
+                display: block;
+            }
+        }
     }
     .feature-description {
         //@include zen-grid-item(2,4);
@@ -510,6 +517,29 @@ and open the template in the editor.
         }
     }
     
+}
+
+/* entity form */
+.entityform {
+    .form-wrapper {
+        padding: 15px;
+        &:nth-child(odd):not(.form-actions) {
+            background-color: $lightgray;
+        }
+        .form-item { margin: 0; }
+        label {
+            display: block; float: left; width: 30%;
+            text-align: right; padding-right: 20px;
+        }
+        &.form-actions {
+            input { margin-left: calc(30% + 20px); }
+        }
+        input[type=text] {
+            border: 1px $gray solid;
+        }
+        
+        
+    }
 }
 
 
