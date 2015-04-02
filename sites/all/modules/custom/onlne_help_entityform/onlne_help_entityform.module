@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Onlne Help EntityForm feature.
+ */
+
+include_once 'onlne_help_entityform.features.inc';
