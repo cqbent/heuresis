@@ -2420,7 +2420,7 @@ and open the template in the editor.
 }
 @media (max-width: 779px) {
   /* line 392, ../sass/_heuresis.scss */
-  .front #main .responsive-grid li {
+  .front #main .home-features .responsive-grid li {
     text-align: center;
   }
 }

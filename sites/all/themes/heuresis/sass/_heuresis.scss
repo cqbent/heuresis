@@ -388,7 +388,7 @@ and open the template in the editor.
             }
         }
         @include breakpoint(maxsmall) {
-            .responsive-grid {
+            .home-features .responsive-grid {
                 li {
                     text-align: center;
                 }
