@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 #page {
-    max-width: 100%;
+    max-width: 100%; color: $textgray;
     .block-menu-block {
         ul {
             margin: 0; padding: 0;
@@ -139,6 +139,7 @@ and open the template in the editor.
             h2.block-title {
                 text-transform: uppercase; font-size:1em;
                 color: $lightblue; margin: 0; line-height: normal;
+                margin-bottom: 5px;
                 a { color: $lightblue; }
             }
             li {
