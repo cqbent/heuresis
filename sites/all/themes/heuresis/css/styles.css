@@ -1861,7 +1861,8 @@ and open the template in the editor.
   display: block;
   margin: 0 auto;
   max-width: 1160px;
-  padding-left: 250px;
+  padding-left: 100px;
+  box-sizing: border-box;
 }
 /* line 54, ../sass/_heuresis.scss */
 #header #logo img {

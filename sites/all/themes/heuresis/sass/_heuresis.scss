@@ -50,7 +50,7 @@ and open the template in the editor.
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#4b4a4a',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
     #logo {
         float: none; display: block; margin: 0 auto; max-width:1160px;
-        padding-left: 250px;
+        padding-left: 100px; box-sizing: border-box;
         img { width: 208px; }
     }
     .region-header {
