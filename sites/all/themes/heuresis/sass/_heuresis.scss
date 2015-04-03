@@ -198,6 +198,9 @@ and open the template in the editor.
     
     .responsive-grid {
         list-style: none; padding: 0; margin: 0;
+        li {
+            margin-bottom: 30px;
+        }
     }
     
     /* product comparison layout */
@@ -347,6 +350,7 @@ and open the template in the editor.
             padding: 20px;
             h2 { margin-top: 0; }
             .col-1 { display: none; }
+            
         }
         @include breakpoint(minsmall) {
             min-height: 540px;
@@ -362,6 +366,7 @@ and open the template in the editor.
            background-position-x: 25%;
            
         }
+        
     }
     #main {
         max-width: 100%; margin: 0; padding: 0;
@@ -380,6 +385,13 @@ and open the template in the editor.
             .node .responsive-grid {
                 .column-1 { padding-right: 40px; }
                 .column-2 { padding-left: 40px; }
+            }
+        }
+        @include breakpoint(maxsmall) {
+            .responsive-grid {
+                li {
+                    text-align: center;
+                }
             }
         }
     }
