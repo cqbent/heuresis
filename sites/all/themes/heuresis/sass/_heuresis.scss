@@ -69,7 +69,7 @@ and open the template in the editor.
                 font-size: 48px;
                 display: block;
                 line-height: 45px;
-                color: $midblue;
+                
             }
         }
         .menu-block-wrapper {
@@ -97,6 +97,10 @@ and open the template in the editor.
                 display: block;
             }
         }
+    }
+    @include breakpoint(maxsmall) {
+        background: none;
+        
     }
     
     @include breakpoint(minsmall) {
@@ -361,19 +365,21 @@ and open the template in the editor.
             float: right;
         }
         @include breakpoint(maxsmall) {
-            padding: 20px;
-            h2 { margin-top: 0; }
-            .col-1 { display: none; }
+            background: none;
+            .block-inner {
+                h2 { margin: 0; }
+                padding: 20px;
+                background-color: $midblue;
+            }
+            .mobile-image { display: block; }
             
         }
         @include breakpoint(minsmall) {
             min-height: 540px;
-            $zen-column-count: 5;
-            .col-1 {
-                display: none; 
-                //@include zen-grid-item(2,1);
+            .block-inner { 
+                float:left; margin-left: calc(50% - 30px); 
             }
-            .col-2 { width: calc(50% - 30px); }
+            .mobile-image { display: none; }
             
         }
         @include breakpoint(maxlarge) {
