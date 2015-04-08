@@ -367,6 +367,7 @@ and open the template in the editor.
         @include breakpoint(maxsmall) {
             background: none;
             .block-inner {
+                font-size:.75em;
                 h2 { margin: 0; }
                 padding: 20px;
                 background-color: $midblue;
