@@ -1,0 +1,16 @@
+name = Join Mailing List
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = join_mailing_list
+dependencies[] = email
+dependencies[] = entity
+dependencies[] = entityform
+dependencies[] = features
+dependencies[] = rules
+features[entityform_type][] = join_mailing_list
+features[features_api][] = api:2
+features[field_base][] = field_email_address
+features[field_instance][] = entityform-join_mailing_list-field_email_address
+features[rules_config][] = rules_join_mailing_list
+project path = sites/all/modules/custom

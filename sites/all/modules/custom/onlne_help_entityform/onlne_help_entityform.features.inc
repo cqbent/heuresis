@@ -42,7 +42,7 @@ function onlne_help_entityform_default_entityform_type() {
     "rdf_mapping" : [],
     "paths" : { "submit" : {
         "source" : "eform\\/submit\\/online-help",
-        "alias" : "customer-services\\/online-help",
+        "alias" : "customer-service\\/online-help",
         "language" : "und"
       }
     }

@@ -285,8 +285,22 @@ and open the template in the editor.
         padding: 20px 0;
         border-bottom: 1px $lightgray solid;
         .entityform {
-            label { float: left; font-weight: normal; margin-right: 20px; }
-            .button { margin-left: 20px; }
+            @include clearafter;
+            .form-wrapper {
+                background:none; padding: 0; float:left; margin-right: 20px;
+                label { 
+                    float: left; font-weight: normal; margin-right: 20px; 
+                    width: auto;
+                }
+                input[type=text] { 
+                    width: 175px; margin: 0; padding: 4px;
+                }
+                &.form-actions {
+                    input { margin: 0; }
+                }
+                
+            }
+            
         }
     }
     .footer-info-block, .footer-menu-block, .copyright-footer {

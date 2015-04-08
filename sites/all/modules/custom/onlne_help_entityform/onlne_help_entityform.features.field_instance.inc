@@ -10,6 +10,39 @@
 function onlne_help_entityform_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'entityform-online_help-field_address'
+  $field_instances['entityform-online_help-field_address'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_address',
+    'label' => 'Address',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'entityform-online_help-field_category'
   $field_instances['entityform-online_help-field_category'] = array(
     'bundle' => 'online_help',
@@ -28,15 +61,50 @@ function onlne_help_entityform_field_default_field_instances() {
     'entity_type' => 'entityform',
     'field_name' => 'field_category',
     'label' => 'Category',
-    'required' => FALSE,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_city'
+  $field_instances['entityform-online_help-field_city'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_city',
+    'label' => 'City',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
     ),
   );
 
@@ -70,7 +138,108 @@ function onlne_help_entityform_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_contact_name'
+  $field_instances['entityform-online_help-field_contact_name'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_contact_name',
+    'label' => 'Contact Name',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
       'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_contact_telephone'
+  $field_instances['entityform-online_help-field_contact_telephone'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_contact_telephone',
+    'label' => 'Contact Telephone',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_country'
+  $field_instances['entityform-online_help-field_country'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_country',
+    'label' => 'Country',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
     ),
   );
 
@@ -103,7 +272,75 @@ function onlne_help_entityform_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 2,
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_heuresis_product'
+  $field_instances['entityform-online_help-field_heuresis_product'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_heuresis_product',
+    'label' => 'Heuresis Product',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_message'
+  $field_instances['entityform-online_help-field_message'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_message',
+    'label' => 'Message',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 14,
     ),
   );
 
@@ -137,7 +374,7 @@ function onlne_help_entityform_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -159,15 +396,16 @@ function onlne_help_entityform_field_default_field_instances() {
     'entity_type' => 'entityform',
     'field_name' => 'field_priority',
     'label' => 'Priority',
-    'required' => FALSE,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -201,18 +439,94 @@ function onlne_help_entityform_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_state'
+  $field_instances['entityform-online_help-field_state'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_state',
+    'label' => 'State',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'entityform-online_help-field_subject'
+  $field_instances['entityform-online_help-field_subject'] = array(
+    'bundle' => 'online_help',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_subject',
+    'label' => 'Subject',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Address');
   t('Category');
+  t('City');
   t('Company Name');
+  t('Contact Name');
+  t('Contact Telephone');
+  t('Country');
   t('Email');
+  t('Heuresis Product');
   t('Heuresis Serial Number');
+  t('Message');
   t('Name');
   t('Priority');
+  t('State');
+  t('Subject');
 
   return $field_instances;
 }

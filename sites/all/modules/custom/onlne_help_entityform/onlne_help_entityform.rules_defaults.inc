@@ -15,6 +15,14 @@ function onlne_help_entityform_default_rules_configuration() {
       "OWNER" : "rules",
       "REQUIRES" : [ "rules", "entityform" ],
       "ON" : { "entityform_insert" : [] },
+      "IF" : [
+        { "entity_is_of_bundle" : {
+            "entity" : [ "entityform" ],
+            "type" : "entityform",
+            "bundle" : { "value" : { "online_help" : "online_help" } }
+          }
+        }
+      ],
       "DO" : [
         { "mail" : {
             "to" : "cqbent@gmail.com",
