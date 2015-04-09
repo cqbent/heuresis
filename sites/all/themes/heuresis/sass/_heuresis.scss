@@ -75,7 +75,7 @@ and open the template in the editor.
         .menu-block-wrapper {
             display: none;
             position: absolute; width: 100%; left: -20px;
-            background: rgba(255,255,255,.9); border-bottom: 1px $lightgray solid;
+            background: rgba(255,255,255,.95); border-bottom: 1px $lightgray solid;
             top:80px; padding: 20px; z-index: 2;
             ul {
                 margin: 0 auto; padding: 0; max-width: 1200px;
@@ -144,7 +144,10 @@ and open the template in the editor.
                 text-transform: uppercase; font-size:1em;
                 color: $lightblue; margin: 0; line-height: normal;
                 margin-bottom: 5px;
-                a { color: $lightblue; }
+                a { 
+                    color: $lightblue; 
+                    &.pb200i { text-transform: capitalize; }
+                }
             }
             li {
                 margin-bottom: 6px;
@@ -343,7 +346,7 @@ and open the template in the editor.
         background: linear-gradient(135deg,  #15becf 0%,#2056bb 100%); 
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15becf', endColorstr='#2056bb',GradientType=1 ); 
         */
-        background-image: url(../images/home_main_image.jpg); 
+        background-image: url(../images/home_banner_paint_image.jpg); 
         background-repeat: no-repeat; background-size: cover;
         color: #fff;
         line-height: normal;
