@@ -299,7 +299,8 @@ and open the template in the editor.
                 input[type=text] { 
                     width: 175px; margin: 0; padding: 4px;
                 }
-                &.form-actions {
+                &.form-actions, .form-actions {
+                    float: left;
                     input { margin: 0; }
                 }
                 
@@ -420,14 +421,14 @@ and open the template in the editor.
 /* product comparison page */
 .section-product-comparison {
     #content {
-        $zen-column-count: 10;
         .comparison-buttons {
+            margin-bottom: 20px;
             li {
-                padding: 0 1px 0 0;
+                padding: 0 1px 0 0; margin: 0 0 10px 0;
                 button {
                     width: 100%; display: block;
                     background-color: $gray; color: #fff;
-                    font-weight: bold;
+                    font-weight: bold; padding: 10px;
                     &.active {
                         background-color: $lightblue;
                     }
@@ -438,12 +439,12 @@ and open the template in the editor.
             }
         }
         .comparison-images {
-            @include zen-grid-item(3,1);
-            position: relative; min-height: 220px;
+            position: relative; 
             img {
-                position: absolute; top: 0; 
+                position: relative;  
                 &.pb200i {
-                    top: auto; bottom: 0; left: 70px; z-index: 2;
+                    position: absolute; display: block;
+                    z-index: 2;
                 }
                 &:not(.pb200i) { display: none; }
                 &.active {
@@ -452,7 +453,6 @@ and open the template in the editor.
             }
         }
         .comparison-table {
-            @include zen-grid-item(7,4);
             tr {
                 border-bottom: 1px $gray solid;
                 th {
@@ -481,6 +481,29 @@ and open the template in the editor.
                 }
             }
             tbody tr:last-child { border: none; }
+        }
+    }
+    @include breakpoint(maxsmall) {
+        #content {
+            .comparison-images {
+                img {
+                    margin: 0 auto;
+                    &.pb200i {
+                        left: calc(50% - 130px);
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint(minsmall) {
+        #content {
+            $zen-column-count: 10;
+            .comparison-images {
+                @include zen-grid-item(3,1);
+            }
+            .comparison-table {
+                @include zen-grid-item(7,4);
+            }
         }
     }
 }
